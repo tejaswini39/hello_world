@@ -1,0 +1,7 @@
+- name : Ensure newfile copied from src to dest
+  #gather_facts: false
+  hosts: localhost
+  tasks:
+   - copy: src="newfile" dest="test"
+     src: "newfile"
+     dest: "test"
